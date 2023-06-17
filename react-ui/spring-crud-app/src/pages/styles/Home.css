@@ -1,0 +1,230 @@
+.navbar-cont {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  width: 100%;
+  background-color: blueviolet;
+  align-items: center;
+}
+
+.page-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  padding-left: 1%;
+  gap: 5%;
+  height: 100%;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  padding-right: 2%;
+  gap: 5%;
+  height: 100%;
+}
+
+.page-section>button {
+  border: none;
+  background-color: inherit;
+  color: white;
+  cursor: pointer;
+}
+
+.user-section>button {
+  border: none;
+  background-color: inherit;
+  color: white;
+  cursor: pointer;
+}
+
+.page-section>button:hover {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+.user-section>button:hover {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+.search-bar {
+  align-items: center;
+  height: 65%;
+  width: 50%;
+  border-radius: 4px;
+}
+
+.search-bar-cont {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  width: 100%;
+  border-radius: inherit
+}
+
+.search-input {
+  width: 100%;
+  height: 96%;
+  border: none;
+  padding: 0px 5px 0px 5px;
+  border-radius: inherit
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-icon {
+  background-color: green;
+  display: flex;
+  align-items: center;
+  color: white;
+  height: 100%;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+  padding: 0px 5px 0px 5px;
+}
+
+.search-icon:hover {
+  cursor: pointer;
+}
+
+.suggestion-cont {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  background-color: rgb(117, 116, 116);
+  max-height: 180px;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.suggestion-cont:hover {
+  overflow: auto;
+}
+
+.suggestion-cont::-webkit-scrollbar {
+  width: 0.1em;
+  background-color: transparent;
+}
+
+.suggestion-cont::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.suggestion-cont {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.suggestion-cont::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.suggestion-cont>button{
+  width: 100%;
+  height: 30px;
+  background-color: inherit;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(177, 172, 172);
+  color: white;
+}
+.suggestion-cont>button:focus, .suggestion-cont>button:active{
+  outline: none;
+}
+.suggestion-cont>button:hover{
+  cursor: pointer;
+}
+
+/* SignUp Section*/
+
+.signUp-cont,
+.logIn-cont {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signUp-popup,
+.logIn-popup {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 1px 20px rgb(117, 11, 216);
+}
+
+.signUp-popup h2,
+.logIn-popup h2 {
+  margin-top: 0;
+}
+
+.signUp-popup label,
+.logIn-popup label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.signUp-popup input,
+.logIn-popup input {
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 1px 20px rgb(117, 11, 216);
+  margin-bottom: 10px;
+}
+
+.signUp-popup input:focus,
+.logIn-popup input:focus {
+  outline: none;
+}
+
+#submit-btn {
+  display: block;
+  background-color: #187a04;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+#close-btn {
+  display: block;
+  background-color: #920505;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.signUp-form,
+.logIn-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.signUp-form>div,
+.logIn-form>div {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}

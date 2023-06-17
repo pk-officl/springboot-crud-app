@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>E-Pass</title>
+<link rel="stylesheet" href="home.css">
+<script src="jquery-3.6.4.js"></script>
+<script src="home.js"></script>
+</head>
+<body>
+	<h1>E-Pass Seva</h1>
+	<div class="buttons">
+		<button class="register" onclick="openForm(event)" value="Register">Register</button>
+		<button class="login" onclick="openForm(event)" value="Login">Login</button>
+	</div>
+	<div class="forms">
+		<form id="registerForm" class="userForm" onsubmit="preventDefault()">
+			<label for="firstname">First Name</label>
+			<input type="text" id="firstname" name="firstname" /> <br>
+			<label for="lastname">Last Name</label>
+			<input type="text" id="lastname" name="lastname" /> <br>
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" /> <br>
+			<label for="password">Password</label> 
+			<input type="password"id="password" name="password" /> <br>
+			<label for="confirmPassword">Confirm Password</label>
+			<input type="password" id="confirmPassword" name="confirmPassword" /> <br>
+			<button class="login" onclick="submitForm(event)" value="Register" type="submit">Register</button>
+			<span>Already Have an account ? <button onclick="openForm(event)" value="Login" type="submit">Login </button> </span>
+		</form>
+		<form id="loginForm" class="userForm" onsubmit="preventDefault()">
+			<label for="email">Email</label>
+			<input type="email" id="user_email" name="email" /> <br> 
+			<label for="password">Password</label>
+			<input type="password" id="user_password" name="password" /> <br>
+			<button class="login" onclick="submitForm(event)" value="Login" type="submit">Login</button>
+			<span>Don't Have an account ? <button onclick="openForm(event)" value="Register" type="submit">Register </button> </span>
+		</form>
+	</div>
+</body>
+</html>
